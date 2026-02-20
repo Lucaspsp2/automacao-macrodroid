@@ -1,0 +1,19 @@
+# Virtualenv
+.macro/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Env / secrets
+.env
