@@ -1,6 +1,10 @@
+import pytest
+
 from pages.macrodroid_page import MacroDroidPage
 
 
+@pytest.mark.navigation
+@pytest.mark.regression
 def test_logs_navigation_with_dark_mode_cleanup(driver):
     """
     Fluxo funcional completo:

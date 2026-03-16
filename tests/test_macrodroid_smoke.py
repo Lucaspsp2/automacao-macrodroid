@@ -1,7 +1,11 @@
 import time
+import pytest
+
 from pages.macrodroid_page import MacroDroidPage
 
 
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_macrodroid_stays_in_foreground(driver):
     """
     Smoke test:
@@ -15,7 +19,6 @@ def test_macrodroid_stays_in_foreground(driver):
     app.wait_until_foreground()
     app.assert_in_foreground()
 
-    # Pequenas esperas para reduzir flake e simular "tempo real" sem travar demais o teste
     time.sleep(1)
     app.assert_in_foreground()
 
@@ -23,6 +26,8 @@ def test_macrodroid_stays_in_foreground(driver):
     app.assert_in_foreground()
 
 
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_log_current_state_for_debug(driver):
     """
     Smoke test:

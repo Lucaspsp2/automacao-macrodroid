@@ -1,11 +1,14 @@
+import pytest
+
 from pages.macrodroid_page import MacroDroidPage
 
 
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_open_macrodroid_hello_world(driver):
     """
     Teste MVP usando Page Object Model.
     """
-
     macrodroid = MacroDroidPage(driver)
 
     macrodroid.open()
