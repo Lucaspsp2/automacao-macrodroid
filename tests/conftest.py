@@ -3,8 +3,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-import pytest
 import allure
+import pytest
 from appium import webdriver
 from appium.options.android import UiAutomator2Options
 
@@ -26,7 +26,6 @@ def driver():
     """
     Fixture do Pytest responsável por criar e encerrar a sessão Appium.
     """
-
     options = UiAutomator2Options()
     options.platform_name = "Android"
     options.automation_name = "UiAutomator2"
@@ -60,12 +59,10 @@ def pytest_runtest_makereport(item, call):
     Hook do Pytest que tira screenshot automaticamente quando um teste falha
     e anexa a imagem ao relatório do Allure.
     """
-
     outcome = yield
     report = outcome.get_result()
 
     if report.when == "call" and report.failed:
-
         driver = item.funcargs.get("driver")
 
         if driver:
@@ -73,7 +70,6 @@ def pytest_runtest_makereport(item, call):
             os.makedirs(screenshots_dir, exist_ok=True)
 
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
             filename = f"{screenshots_dir}/failure_{item.name}_{timestamp}.png"
 
             driver.save_screenshot(filename)
@@ -82,7 +78,7 @@ def pytest_runtest_makereport(item, call):
                 allure.attach(
                     f.read(),
                     name="Failure Screenshot",
-                    attachment_type=allure.attachment_type.PNG
+                    attachment_type=allure.attachment_type.PNG,
                 )
 
             print(f"\nScreenshot salva em: {filename}")

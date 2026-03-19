@@ -3,6 +3,7 @@ from __future__ import annotations
 import time
 
 from appium.webdriver.common.appiumby import AppiumBy
+
 from pages.base_page import BasePage
 
 
@@ -18,6 +19,7 @@ class MacroDroidPage(BasePage):
     BACK_BUTTON = (AppiumBy.ID, "com.arlosoft.macrodroid:id/backButton")
 
     # Configuração Dark Mode
+    # Observação: este locator por instance é frágil, mas é o melhor disponível no momento.
     DARK_MODE_OPTION = (
         AppiumBy.ANDROID_UIAUTOMATOR,
         'new UiSelector().className("android.widget.RelativeLayout").instance(4)',
@@ -37,7 +39,6 @@ class MacroDroidPage(BasePage):
         'new UiSelector().resourceId("com.arlosoft.macrodroid:id/clickContainer").instance(8)',
     )
 
-    # Melhor abordagem para User Log: scroll até o texto
     USER_LOG_TEXT = (
         AppiumBy.ANDROID_UIAUTOMATOR,
         'new UiSelector().text("User Log")',
@@ -63,7 +64,8 @@ class MacroDroidPage(BasePage):
 
         act = self.driver.current_activity
         raise AssertionError(
-            f"MacroDroid não ficou em foco em {timeout}s. package={self.driver.current_package!r}, activity={act!r}"
+            f"MacroDroid não ficou em foco em {timeout}s. "
+            f"package={self.driver.current_package!r}, activity={act!r}"
         )
 
     def _wait_for_element(self, locator: tuple[str, str], timeout: float = 8.0, interval: float = 0.5):
@@ -72,13 +74,15 @@ class MacroDroidPage(BasePage):
 
         while time.time() < end:
             try:
-                element = self.driver.find_element(*locator)
-                return element
+                return self.driver.find_element(*locator)
             except Exception as exc:
                 last_error = exc
                 time.sleep(interval)
 
-        raise AssertionError(f"Elemento não encontrado após {timeout}s. locator={locator!r}. erro={last_error!r}")
+        raise AssertionError(
+            f"Elemento não encontrado após {timeout}s. "
+            f"locator={locator!r}. erro={last_error!r}"
+        )
 
     def assert_in_foreground(self) -> None:
         pkg = self.driver.current_package
