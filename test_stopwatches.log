@@ -1,0 +1,137 @@
+2026-03-24 00:26:48 | INFO     | setup | ============================================================
+2026-03-24 00:26:48 | INFO     | setup | Iniciando setup do teste de navegação
+2026-03-24 00:26:52 | INFO     | setup | Setup concluído - App está em foreground
+2026-03-24 00:26:52 | INFO     | test_navigate_to_stopwatches_page | Iniciando teste: Navegação para página de Stopwatches
+2026-03-24 00:26:52 | DEBUG    | test_navigate_to_stopwatches_page | Clicando no botão de Stopwatches
+2026-03-24 00:26:58 | DEBUG    | test_navigate_to_stopwatches_page | Verificando se a página de Stopwatches está visível
+2026-03-24 00:27:01 | INFO     | test_navigate_to_stopwatches_page | Página de Stopwatches visível: True
+2026-03-24 00:27:01 | INFO     | test_navigate_to_stopwatches_page | ✅ Teste de navegação concluído com sucesso
+2026-03-24 00:27:35 | INFO     | setup | ============================================================
+2026-03-24 00:27:35 | INFO     | setup | Iniciando setup do teste de criação
+2026-03-24 00:27:38 | DEBUG    | setup | Navegando para página de Stopwatches
+2026-03-24 00:27:49 | INFO     | setup | Setup concluído - Página de Stopwatches carregada
+2026-03-24 00:27:49 | INFO     | test_create_new_stopwatch | Iniciando teste: Criacao de novo Stopwatch
+2026-03-24 00:27:49 | DEBUG    | test_create_new_stopwatch | Clicando no botao de adicionar novo stopwatch
+2026-03-24 00:27:49 | DEBUG    | test_create_new_stopwatch | Preenchendo nome do stopwatch: 'automation_test'
+2026-03-24 00:27:54 | DEBUG    | test_create_new_stopwatch | Obtendo nome do stopwatch criado
+2026-03-24 00:27:54 | INFO     | test_create_new_stopwatch | Nome do stopwatch obtido: 'automation_test'
+2026-03-24 00:27:54 | INFO     | test_create_new_stopwatch | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:27:54 | DEBUG    | test_create_new_stopwatch | Abrindo menu de contexto do stopwatch
+2026-03-24 00:27:55 | DEBUG    | test_create_new_stopwatch | Clicando na opcao de deletar
+2026-03-24 00:27:56 | INFO     | test_create_new_stopwatch | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:27:56 | INFO     | test_create_new_stopwatch | Teste de criacao concluido com sucesso
+2026-03-24 00:28:31 | INFO     | setup | ============================================================
+2026-03-24 00:28:31 | INFO     | setup | Iniciando setup do teste de criação
+2026-03-24 00:28:34 | DEBUG    | setup | Navegando para página de Stopwatches
+2026-03-24 00:28:44 | INFO     | setup | Setup concluído - Página de Stopwatches carregada
+2026-03-24 00:28:44 | INFO     | test_add_stopwatch_button_is_clickable | Iniciando teste: Verificacao do botao de adicionar
+2026-03-24 00:28:44 | DEBUG    | test_add_stopwatch_button_is_clickable | Verificando se o botao FAB esta acessivel
+2026-03-24 00:28:51 | INFO     | test_add_stopwatch_button_is_clickable | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:28:54 | INFO     | test_add_stopwatch_button_is_clickable | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:28:54 | INFO     | test_add_stopwatch_button_is_clickable | Botao de adicionar stopwatch esta funcional
+2026-03-24 00:29:25 | INFO     | setup | ============================================================
+2026-03-24 00:29:25 | INFO     | setup | Iniciando setup do teste de Play/Pause
+2026-03-24 00:29:28 | DEBUG    | setup | Navegando para página de Stopwatches
+2026-03-24 00:29:38 | DEBUG    | setup | Criando stopwatch para teste
+2026-03-24 00:29:42 | INFO     | setup | Setup concluído - Stopwatch criado para teste
+2026-03-24 00:29:42 | INFO     | test_play_stopwatch | Iniciando teste: Play do Stopwatch
+2026-03-24 00:29:42 | DEBUG    | test_play_stopwatch | Clicando no botao play/pause para iniciar
+2026-03-24 00:29:46 | INFO     | test_play_stopwatch | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:29:47 | INFO     | test_play_stopwatch | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:29:47 | INFO     | test_play_stopwatch | Teste de play concluido com sucesso
+2026-03-24 00:30:20 | INFO     | setup | ============================================================
+2026-03-24 00:30:20 | INFO     | setup | Iniciando setup do teste de Play/Pause
+2026-03-24 00:30:22 | DEBUG    | setup | Navegando para página de Stopwatches
+2026-03-24 00:30:33 | DEBUG    | setup | Criando stopwatch para teste
+2026-03-24 00:30:38 | INFO     | setup | Setup concluído - Stopwatch criado para teste
+2026-03-24 00:30:38 | INFO     | test_pause_stopwatch | Iniciando teste: Pause do Stopwatch
+2026-03-24 00:30:38 | DEBUG    | test_pause_stopwatch | Clicando no botao play para iniciar
+2026-03-24 00:30:41 | DEBUG    | test_pause_stopwatch | Clicando no botao pause para pausar
+2026-03-24 00:30:45 | INFO     | test_pause_stopwatch | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:30:47 | INFO     | test_pause_stopwatch | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:30:47 | INFO     | test_pause_stopwatch | Teste de pause concluido com sucesso
+2026-03-24 00:31:21 | INFO     | setup | ============================================================
+2026-03-24 00:31:21 | INFO     | setup | Iniciando setup do teste de Play/Pause
+2026-03-24 00:31:23 | DEBUG    | setup | Navegando para página de Stopwatches
+2026-03-24 00:31:33 | DEBUG    | setup | Criando stopwatch para teste
+2026-03-24 00:31:37 | INFO     | setup | Setup concluído - Stopwatch criado para teste
+2026-03-24 00:31:37 | INFO     | test_play_pause_toggle | Iniciando teste: Toggle Play/Pause
+2026-03-24 00:31:37 | DEBUG    | test_play_pause_toggle | Executando sequencia: Play -> Pause -> Play -> Pause
+2026-03-24 00:31:37 | DEBUG    | test_play_pause_toggle | Iteracao 1: Play
+2026-03-24 00:31:41 | DEBUG    | test_play_pause_toggle | Iteracao 2: Pause
+2026-03-24 00:31:43 | DEBUG    | test_play_pause_toggle | Iteracao 3: Play
+2026-03-24 00:31:45 | DEBUG    | test_play_pause_toggle | Iteracao 4: Pause
+2026-03-24 00:31:49 | INFO     | test_play_pause_toggle | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:31:51 | INFO     | test_play_pause_toggle | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:31:51 | INFO     | test_play_pause_toggle | Teste de toggle Play/Pause concluido com sucesso
+2026-03-24 00:32:19 | INFO     | setup | ============================================================
+2026-03-24 00:32:19 | INFO     | setup | Iniciando setup do teste de Clear
+2026-03-24 00:32:37 | INFO     | setup | Setup concluído - Stopwatch criado para teste de Clear
+2026-03-24 00:32:37 | INFO     | test_clear_stopwatch | Iniciando teste: Clear do Stopwatch
+2026-03-24 00:32:37 | DEBUG    | test_clear_stopwatch | Iniciando stopwatch
+2026-03-24 00:32:40 | DEBUG    | test_clear_stopwatch | Pausando stopwatch
+2026-03-24 00:32:43 | DEBUG    | test_clear_stopwatch | Limpando stopwatch
+2026-03-24 00:32:43 | INFO     | test_clear_stopwatch | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:32:46 | INFO     | test_clear_stopwatch | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:32:46 | INFO     | test_clear_stopwatch | Teste de clear concluido com sucesso
+2026-03-24 00:33:16 | INFO     | setup | ============================================================
+2026-03-24 00:33:16 | INFO     | setup | Iniciando setup do teste de Clear
+2026-03-24 00:33:32 | INFO     | setup | Setup concluído - Stopwatch criado para teste de Clear
+2026-03-24 00:33:32 | INFO     | test_clear_after_play | Iniciando teste: Clear apos Play
+2026-03-24 00:33:32 | DEBUG    | test_clear_after_play | Iniciando stopwatch
+2026-03-24 00:33:36 | DEBUG    | test_clear_after_play | Executando clear enquanto rodando
+2026-03-24 00:33:37 | INFO     | test_clear_after_play | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:33:39 | INFO     | test_clear_after_play | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:33:39 | INFO     | test_clear_after_play | Teste de clear apos play concluido com sucesso
+2026-03-24 00:34:09 | INFO     | setup | ============================================================
+2026-03-24 00:34:09 | INFO     | setup | Iniciando setup do teste de Rename
+2026-03-24 00:34:27 | INFO     | setup | Setup concluído - Stopwatch criado para teste de Rename
+2026-03-24 00:34:27 | INFO     | test_open_stopwatch_details | Iniciando teste: Abrir detalhes do Stopwatch
+2026-03-24 00:34:27 | DEBUG    | test_open_stopwatch_details | Clicando no stopwatch para abrir detalhes
+2026-03-24 00:34:29 | INFO     | test_open_stopwatch_details | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:34:30 | INFO     | test_open_stopwatch_details | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:34:30 | INFO     | test_open_stopwatch_details | Teste de abrir detalhes concluido com sucesso
+2026-03-24 00:34:59 | INFO     | setup | ============================================================
+2026-03-24 00:34:59 | INFO     | setup | Iniciando setup do teste de Rename
+2026-03-24 00:35:16 | INFO     | setup | Setup concluído - Stopwatch criado para teste de Rename
+2026-03-24 00:35:16 | INFO     | test_rename_stopwatch | Iniciando teste: Renomear Stopwatch
+2026-03-24 00:35:16 | DEBUG    | test_rename_stopwatch | Abrindo menu de contexto do stopwatch
+2026-03-24 00:35:17 | DEBUG    | test_rename_stopwatch | Clicando na opcao de renomear
+2026-03-24 00:35:22 | DEBUG    | test_rename_stopwatch | Verificando novo nome do stopwatch
+2026-03-24 00:35:23 | INFO     | test_rename_stopwatch | Novo nome obtido: 'test_stopwatch'
+2026-03-24 00:35:23 | INFO     | test_rename_stopwatch | Iniciando cleanup: deletando stopwatch criado
+2026-03-24 00:35:26 | INFO     | test_rename_stopwatch | Cleanup concluido - Stopwatch deletado
+2026-03-24 00:35:26 | INFO     | test_rename_stopwatch | Teste de rename concluido com sucesso
+2026-03-24 00:36:01 | INFO     | setup | ============================================================
+2026-03-24 00:36:01 | INFO     | setup | Iniciando setup do teste de Delete
+2026-03-24 00:36:20 | INFO     | setup | Setup concluído - Stopwatch criado para teste de Delete
+2026-03-24 00:36:20 | INFO     | test_delete_stopwatch | Iniciando teste: Deletar Stopwatch
+2026-03-24 00:36:20 | DEBUG    | test_delete_stopwatch | Abrindo menu de contexto do stopwatch
+2026-03-24 00:36:22 | DEBUG    | test_delete_stopwatch | Clicando na opção de deletar
+2026-03-24 00:36:23 | INFO     | test_delete_stopwatch | ✅ Teste de delete concluído com sucesso
+2026-03-24 00:36:56 | INFO     | setup | ============================================================
+2026-03-24 00:36:56 | INFO     | setup | Iniciando setup do teste E2E completo
+2026-03-24 00:36:58 | INFO     | setup | Setup concluído
+2026-03-24 00:36:58 | INFO     | test_full_stopwatch_flow | 🚀 Iniciando teste de fluxo completo E2E
+2026-03-24 00:36:58 | INFO     | test_full_stopwatch_flow | STEP 1: Navegação
+2026-03-24 00:36:58 | DEBUG    | test_full_stopwatch_flow | Clicando no botão de Stopwatches
+2026-03-24 00:37:10 | INFO     | test_full_stopwatch_flow | ✓ Navegação bem-sucedida
+2026-03-24 00:37:10 | INFO     | test_full_stopwatch_flow | STEP 2: Criação
+2026-03-24 00:37:10 | DEBUG    | test_full_stopwatch_flow | Criando novo stopwatch
+2026-03-24 00:37:17 | INFO     | test_full_stopwatch_flow | ✓ Criação bem-sucedida
+2026-03-24 00:37:17 | INFO     | test_full_stopwatch_flow | STEP 3: Play/Pause
+2026-03-24 00:37:17 | DEBUG    | test_full_stopwatch_flow | Executando play
+2026-03-24 00:37:19 | DEBUG    | test_full_stopwatch_flow | Executando pause
+2026-03-24 00:37:22 | INFO     | test_full_stopwatch_flow | ✓ Play/Pause bem-sucedido
+2026-03-24 00:37:22 | INFO     | test_full_stopwatch_flow | STEP 4: Clear
+2026-03-24 00:37:22 | DEBUG    | test_full_stopwatch_flow | Limpando stopwatch
+2026-03-24 00:37:23 | INFO     | test_full_stopwatch_flow | ✓ Clear bem-sucedido
+2026-03-24 00:37:23 | INFO     | test_full_stopwatch_flow | STEP 5: Rename
+2026-03-24 00:37:23 | DEBUG    | test_full_stopwatch_flow | Abrindo detalhes
+2026-03-24 00:37:24 | DEBUG    | test_full_stopwatch_flow | Renomeando stopwatch
+2026-03-24 00:37:29 | INFO     | test_full_stopwatch_flow | ✓ Rename bem-sucedido
+2026-03-24 00:37:29 | INFO     | test_full_stopwatch_flow | STEP 6: Delete
+2026-03-24 00:37:29 | DEBUG    | test_full_stopwatch_flow | Abrindo detalhes para deletar
+2026-03-24 00:37:30 | DEBUG    | test_full_stopwatch_flow | Deletando stopwatch
+2026-03-24 00:37:31 | INFO     | test_full_stopwatch_flow | ✓ Delete bem-sucedido
+2026-03-24 00:37:31 | INFO     | test_full_stopwatch_flow | 🎉 Teste de fluxo completo E2E finalizado com sucesso!
